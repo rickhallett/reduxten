@@ -2,6 +2,11 @@ const initialState = {
     tokens: [
         {
             name: 'BTC',
+            qty: 10_000,
+        },
+        {
+            name: 'DOGE',
+            qty: 10_000_000,
         },
     ],
 };

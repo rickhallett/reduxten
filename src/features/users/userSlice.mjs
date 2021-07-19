@@ -1,15 +1,44 @@
 const initialState = {
     users: [
         {
-            name: 'Mr Robot',
+            name: 'Lockie',
+            wallet: {
+                GBP: 2_000,
+                BTC: 2.1,
+                DOGE: 34_244,
+            },
+        },
+        {
+            name: 'Ed',
+            wallet: {
+                GBP: 2_000,
+                BTC: 2.1,
+                DOGE: 34_244,
+            },
+        },
+        {
+            name: 'Cezary',
+            wallet: {
+                GBP: 2_000,
+                BTC: 2.1,
+                DOGE: 34_244,
+            },
+        },
+        {
+            name: 'Rick',
+            wallet: {
+                GBP: 2_000,
+                BTC: 2.1,
+                DOGE: 34_244,
+            },
         },
     ],
 };
 
-const addUser = (name) => {
+const addUser = (name, wallet) => {
     return {
         type: 'user/add-user',
-        payload: name,
+        payload: { name, wallet },
     };
 };
 
