@@ -1,24 +1,25 @@
 {
-  "name": "reduxten",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "null"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/rickhallett/reduxten.git"
-  },
-  "author": "rickhallett",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/rickhallett/reduxten/issues"
-  },
-  "homepage": "https://github.com/rickhallett/reduxten#readme",
-  "dependencies": {
-    "chalk": "^4.1.1",
-    "faker": "^5.5.3",
-    "redux": "^4.1.0"
-  }
+    "name": "reduxten",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "null"
+    },
+    "type": "module",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com/rickhallett/reduxten.git"
+    },
+    "author": "rickhallett",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rickhallett/reduxten/issues"
+    },
+    "homepage": "https://github.com/rickhallett/reduxten#readme",
+    "dependencies": {
+        "chalk": "^4.1.1",
+        "faker": "^5.5.3",
+        "redux": "^4.1.0"
+    }
 }
