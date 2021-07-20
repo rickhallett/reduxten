@@ -45,7 +45,29 @@ const addUser = (name, wallet) => {
 };
 
 export default function userReducer(state = initialState, action) {
-    return {
-        ...state,
-    };
+    if (!action.type.includes('@@redux'))
+        console.log('userReducer exec:', action);
+    switch (action.type) {
+        case ADD_USER:
+            console.log('we should add a user');
+            console.log({ ...state.users });
+            return {
+                ...state,
+                users: [
+                    ...state.users,
+                    {
+                        name: 'Runtime',
+                        wallet: {
+                            GBP: 2_000_000,
+                            BTC: 10_000,
+                            DOGE: 64_234_213,
+                        },
+                    },
+                ],
+            };
+        default:
+            if (!action.type.includes('@@redux'))
+                console.log('action not available to userReducer');
+            return state;
+    }
 }

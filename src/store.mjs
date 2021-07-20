@@ -9,10 +9,10 @@ store.prettyPrint = () => {
 };
 
 const unsubscribe = store.subscribe(() => {
-    console.log('action dispatched!');
+    console.log('action dispatched!', store.getState().user);
 });
 
-store.dispatch({ type: ADD_USER });
+store.dispatch({ type: ADD_USER, payload: {} });
 
 export default store;
 
