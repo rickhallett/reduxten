@@ -1,5 +1,6 @@
 import redux from 'redux';
 import rootReducer from './rootReducer.mjs';
+import { ADD_USER } from './constants.mjs';
 
 const store = redux.createStore(rootReducer);
 
@@ -11,7 +12,7 @@ const unsubscribe = store.subscribe(() => {
     console.log('action dispatched!');
 });
 
-store.dispatch({ type: 'test/test' });
+store.dispatch({ type: ADD_USER });
 
 export default store;
 

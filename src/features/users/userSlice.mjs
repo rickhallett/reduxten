@@ -1,3 +1,5 @@
+import { ADD_USER } from '../../constants.mjs';
+
 const initialState = {
     users: [
         {
@@ -37,7 +39,7 @@ const initialState = {
 
 const addUser = (name, wallet) => {
     return {
-        type: 'user/add-user',
+        type: ADD_USER,
         payload: { name, wallet },
     };
 };
